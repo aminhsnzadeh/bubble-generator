@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blob Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onchange='_resultd()'>
+    <main>
+        <section id="inputs">
+            <form>
+                <div class="pri-offset">
+                    <h2>Primary Offsets</h2>
+                    <section>
+                        <span>Top</span><input  onchange="_offsetPri()" type="range" min='0' max='100'>
+                        <span>Left</span><input  onchange="_offsetPri()" type="range" min='0' max='100'>
+                        <span>Bottom</span><input  onchange="_offsetPri()" type="range" min='0' max='100'>
+                        <span>Right</span><input  onchange="_offsetPri()" type="range" min='0' max='100'>
+                    </section>
+                </div>
+                <div class="sec-offset">
+                    <h2>Secondary Offsets</h2>
+                    <section>
+                        <span>Top</span><input data-num='0' onchange="_offsetSec()" type="range" min='0' max='100'>
+                        <span>Left</span><input data-num='1' onchange="_offsetSec()" type="range" min='0' max='100'>
+                        <span>Bottom</span><input data-num='2' onchange="_offsetSec()" type="range" min='0' max='100'>
+                        <span>Right</span><input data-num="3" onchange="_offsetSec()" type="range" min='0' max='100'>
+                    </section>
+                </div>
+            </form>
+            <article>
+                <h2>Blob Generator</h2>
+                <p>Try to change above values to get blob you want! you can get the code by pressing on Click to copy values</p>
+                <ul>
+                    <li>More value means curver</li>
+                    <li>Lesser values makes it sharper</li>
+                    <li>Full code will be copy if you press on Click to copy values</li>
+                    <li>Enjoy :D</li>
+                </ul>
+            </article>
+        </section>
+        <section id="result">
+            <div>
+                <div id="blob"></div>
+            </div>
+            <div class='results'>
+                <h2 id="result-percent"><span>50% 50% 50% 50%</span> / <span>50% 50% 50% 50%</span></h2>
+                <button id="btn">Click to copy values</button>
+                <button id="refresh">Generate Random</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/script.js"></script>
+</html>

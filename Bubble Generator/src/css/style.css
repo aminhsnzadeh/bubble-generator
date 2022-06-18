@@ -1,0 +1,230 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-image: url("../img/headimg.jpg");
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  overflow-x: hidden;
+  overflow-y: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.233);
+  color: white;
+}
+
+#inputs {
+  padding: 1.5rem;
+}
+#inputs form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+#inputs form > div h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+#inputs form > div > section input {
+  display: block;
+  margin: 0.5rem 0;
+  width: 250px;
+  accent-color: #be33ff;
+  cursor: pointer;
+}
+#inputs article {
+  margin: 2rem 0;
+  width: 100%;
+  height: auto;
+}
+#inputs article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+#inputs article p {
+  font-size: 1.1rem;
+}
+#inputs article ul {
+  margin: 2rem 1rem;
+  list-style: circle;
+}
+#inputs article ul li {
+  margin: 0.5rem 0;
+  color: #d3d3d3;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#result > div:nth-of-type(1) {
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  margin-bottom: 4rem;
+}
+#result .results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#result .results h2 {
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+#result .results button {
+  padding: 10px 34px;
+  width: 300px;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #be33ff;
+  transition: 0.4s;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#result .results button:hover {
+  background-color: #8e26be;
+}
+
+#blob {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.534);
+  background: linear-gradient(45deg, #6a3093, #44b4ff);
+}
+
+@media only screen and (max-width: 576px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+  }
+
+  #inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  #inputs form {
+    flex-direction: column-reverse;
+  }
+
+  #result {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  #result > div:nth-of-type(1) {
+    width: 280px;
+    height: 280px;
+  }
+
+  .results h2 span {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 577px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+  }
+
+  #inputs {
+    width: 100%;
+    height: auto;
+  }
+
+  #result {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  #result > div:nth-of-type(1) {
+    width: 280px;
+    height: 280px;
+  }
+
+  .results h2 span {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+  }
+
+  #inputs {
+    width: 100%;
+    height: auto;
+  }
+
+  #result {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  #result > div:nth-of-type(1) {
+    width: 280px;
+    height: 280px;
+  }
+
+  .results h2 span {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    height: 100vh;
+    margin: 0 1rem;
+    flex-direction: row;
+  }
+
+  #inputs {
+    width: 50%;
+    height: 100vh;
+  }
+
+  #result {
+    width: 50%;
+    height: 100vh;
+    padding: 1.5rem;
+  }
+  #result > div:nth-of-type(1) {
+    width: 350px;
+    height: 350px;
+  }
+
+  .results h2 span {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
